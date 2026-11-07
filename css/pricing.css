@@ -1,0 +1,40 @@
+/* ================== PRICING ================== */
+.pricing-top{display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:46px}
+.pricing-top .lead{margin-inline:auto}
+.toggle{display:inline-flex;padding:5px;border-radius:999px;background:var(--surface);border:1px solid var(--line);margin-top:30px;position:relative}
+.toggle button{position:relative;z-index:1;padding:11px 22px;border-radius:999px;font-size:14px;font-weight:600;color:var(--muted);transition:color .3s;display:flex;align-items:center;gap:8px}
+.toggle button[aria-pressed="true"]{color:var(--btn-fg)}
+.toggle .pill-bg{position:absolute;top:5px;bottom:5px;border-radius:999px;background:var(--btn-bg);transition:left .4s cubic-bezier(.6,0,.2,1),width .4s cubic-bezier(.6,0,.2,1)}
+.toggle .save{font-size:10.5px;font-family:var(--mono);padding:2px 7px;border-radius:99px;background:color-mix(in srgb,var(--ok) 18%,transparent);color:var(--ok)}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:stretch}
+.plan{position:relative;padding:34px 30px 30px;border-radius:28px;background:var(--surface);border:1px solid var(--line);display:flex;flex-direction:column;transition:transform .35s}
+.plan:hover{transform:translateY(-4px)}
+.plan.featured{background:var(--navy);color:#C9D2EA;border-color:transparent;box-shadow:0 40px 80px -30px rgba(11,27,63,.7)}
+.plan .ribbon{position:absolute;top:22px;right:22px;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;padding:6px 10px;border-radius:99px;background:#fff;color:var(--navy)}
+.plan .pname{font-family:var(--serif);font-variation-settings:"SOFT" 100;font-size:30px;font-weight:600;color:var(--ink);letter-spacing:-.02em}
+.plan.featured .pname{color:#fff}
+.plan .pfor{font-size:14px;color:var(--muted);margin-top:4px;min-height:44px}
+.plan.featured .pfor{color:#AEB8D6}
+.price{margin:26px 0 6px;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.price small{font-size:13px;color:var(--muted);font-weight:500}
+.plan.featured .price small{color:#AEB8D6}
+.price .cur{font-size:16px;font-weight:600;color:var(--ink)}
+.price .num{font-family:var(--serif);font-size:46px;font-weight:600;letter-spacing:-.03em;color:var(--ink);line-height:1}
+.plan.featured .price .cur,.plan.featured .price .num{color:#fff}
+.monthly{font-size:14px;color:var(--muted);min-height:24px}
+.monthly b{color:var(--ink);font-weight:600}
+.plan.featured .monthly{color:#AEB8D6}.plan.featured .monthly b{color:#fff}
+.plan hr{border:0;border-top:1px solid var(--line);margin:22px 0}
+.plan.featured hr{border-color:rgba(255,255,255,.12)}
+.feat{list-style:none;display:flex;flex-direction:column;gap:11px;margin-bottom:28px;flex:1}
+.feat li{display:flex;gap:10px;font-size:14.5px;align-items:flex-start}
+.feat li svg{flex:none;width:18px;height:18px;margin-top:2px;color:var(--ok)}
+.plan.featured .feat li svg{color:#9DB0E6}
+.feat li.extra{animation:fadeIn .5s both}
+.feat li.extra span::after{content:"maintenance";margin-left:8px;font-family:var(--mono);font-size:9.5px;padding:2px 6px;border-radius:99px;background:color-mix(in srgb,var(--accent) 22%,transparent);color:var(--accent);vertical-align:2px}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}}
+.plan .btn{justify-content:center;width:100%}
+.plan.featured .btn-primary{background:#fff;color:var(--navy)}
+.plan:not(.featured) .btn-primary{background:var(--btn-bg);color:var(--btn-fg)}
+.price-note{text-align:center;margin-top:28px;color:var(--muted);font-size:14px}
+.price-note b{color:var(--ink)}

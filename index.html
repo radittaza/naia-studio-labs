@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Naia Studio Labs — Website & Aplikasi Web Laravel · React</title>
+<meta name="description" content="Naia Studio Labs adalah studio freelance oleh Muhammad Raditya Azanata. Membangun company profile, aplikasi CRUD, dashboard, dan SaaS dengan Laravel dan React." />
+<meta property="og:title" content="Naia Studio Labs" />
+<meta property="og:description" content="Website & aplikasi web Laravel · React — company profile, CRUD, dashboard, SaaS." />
+<meta property="og:image" content="assets/logo-dark.png" />
+<meta name="theme-color" content="#0B1B3F" />
+<link rel="icon" type="image/png" href="assets/logo-dark-64.png" />
+<link rel="apple-touch-icon" href="assets/logo-dark.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..800,100;1,9..144,400..700,100&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/tokens.css" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/nav.css" />
+<link rel="stylesheet" href="css/hero.css" />
+<link rel="stylesheet" href="css/about.css" />
+<link rel="stylesheet" href="css/services.css" />
+<link rel="stylesheet" href="css/projects.css" />
+<link rel="stylesheet" href="css/pricing.css" />
+<link rel="stylesheet" href="css/faq.css" />
+<link rel="stylesheet" href="css/contact.css" />
+<link rel="stylesheet" href="css/footer.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+<!-- ================== NAV ================== -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="#beranda" class="brand" aria-label="Naia Studio Labs">
+      <img class="logo" src="assets/logo-light.png" alt="Logo Naia" />
+      <span class="brand-text"><b>Naia Studio Labs</b><span>Web Development Studio</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Navigasi utama">
+      <a href="#tentang">Tentang</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#proyek">Proyek</a>
+      <a href="#harga">Harga</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeBtn" aria-label="Ganti tema">
+        <svg class="theme-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
+        <svg class="theme-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Buka menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></svg>
+      </button>
+      <a href="#kontak" class="btn btn-primary">Konsultasi <span class="arr">→</span></a>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#tentang">Tentang</a><a href="#layanan">Layanan</a><a href="#proyek">Proyek</a><a href="#harga">Harga</a><a href="#faq">FAQ</a><a href="#kontak">Kontak →</a>
+</div>
+
+<main>
+<!-- ================== HERO ================== -->
+<section class="hero" id="beranda">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="status reveal"><i></i> Menerima proyek baru · 2026</span>
+      <h1 class="reveal d1">Website yang <em>rapi,</em><br/>sistem yang <span class="ul">bekerja.<svg viewBox="0 0 300 20" preserveAspectRatio="none" fill="none"><path d="M3 14 C 70 4, 160 4, 297 10" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg></span></h1>
+      <p class="lead reveal d2">Naia Studio Labs membangun website dan aplikasi web dengan <b>Laravel</b> dan <b>React</b> — dari company profile, sistem CRUD &amp; dashboard admin, sampai produk SaaS. Bisa sekali bayar, atau paket lengkap dengan maintenance.</p>
+      <div class="hero-cta reveal d3">
+        <a href="#harga" class="btn btn-primary">Lihat Paket Harga <span class="arr">→</span></a>
+        <a href="#proyek" class="btn btn-ghost">Lihat Proyek</a>
+      </div>
+      <div class="hero-meta reveal d3">
+        <div><b>Laravel</b><span>Backend &amp; sistem</span></div>
+        <div><b>React</b><span>Frontend interaktif</span></div>
+        <div><b>1 : 1</b><span>Langsung dengan developer</span></div>
+      </div>
+    </div>
+
+    <div class="stage reveal d2" aria-hidden="true">
+      <div class="orb"></div>
+      <div class="win win-dash">
+        <div class="win-bar"><i></i><i></i><i></i><span>app.klienmu.id/dashboard</span></div>
+        <div class="dash">
+          <aside><i></i><i></i><i></i><i></i><i></i></aside>
+          <main>
+            <div class="kpis">
+              <div class="kpi"><small>Pesanan</small><b>1.284</b></div>
+              <div class="kpi"><small>Stok</small><b>8.902</b></div>
+              <div class="kpi"><small>Klien</small><b>312</b></div>
+            </div>
+            <div class="chart">
+              <i style="height:40%;animation-delay:.1s"></i><i style="height:62%;animation-delay:.18s"></i><i style="height:48%;animation-delay:.26s"></i><i style="height:80%;animation-delay:.34s"></i><i style="height:66%;animation-delay:.42s"></i><i style="height:92%;animation-delay:.5s"></i><i style="height:74%;animation-delay:.58s"></i>
+            </div>
+            <div class="rows">
+              <div><i></i><em>selesai</em></div>
+              <div><i style="flex:.7"></i><em>selesai</em></div>
+              <div><i style="flex:.85"></i><em>selesai</em></div>
+            </div>
+          </main>
+        </div>
+      </div>
+      <div class="win win-code">
+        <div class="win-bar"><i></i><i></i><i></i><span>routes/web.php</span></div>
+<pre><span class="c-m">// naia studio labs</span>
+<span class="c-k">Route</span>::<span class="c-f">middleware</span>(<span class="c-s">'auth'</span>)
+  -&gt;<span class="c-f">group</span>(<span class="c-k">function</span> () {
+    <span class="c-k">Route</span>::<span class="c-f">resource</span>(<span class="c-s">'projects'</span>,
+      <span class="c-k">ProjectController</span>::<span class="c-k">class</span>);
+  });</pre>
+      </div>
+      <div class="chip chip-1"><svg viewBox="0 0 24 24" fill="none" stroke="#2F8F6B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg> Deploy berhasil</div>
+      <div class="chip chip-2"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="2.4"/><g fill="none" stroke="currentColor" stroke-width="1.4"><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/></g></svg> React + Laravel</div>
+    </div>
+  </div>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Laravel</span><span>React.js</span><span>Next.js</span><span>PHP</span><span>Tailwind CSS</span><span>MySQL</span><span>REST API</span><span>Dashboard Admin</span><span>SaaS</span>
+      <span>Laravel</span><span>React.js</span><span>Next.js</span><span>PHP</span><span>Tailwind CSS</span><span>MySQL</span><span>REST API</span><span>Dashboard Admin</span><span>SaaS</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================== TENTANG / FOUNDER ================== -->
+<section id="tentang">
+  <div class="wrap about-grid">
+    <aside class="founder-card reveal">
+      <div class="portrait">
+        <!-- Foto profil 1:1 — ganti file assets/foto.jpg untuk memperbarui -->
+        <img src="assets/foto.jpg" alt="Muhammad Raditya Azanata" width="800" height="800" loading="lazy" />
+        <span class="tag">Founder · Developer</span>
+      </div>
+      <div class="founder-meta">
+        <h3>Muhammad Raditya Azanata</h3>
+        <p>Full-stack web developer · Telkom University Purwokerto</p>
+        <div class="socials">
+          <!-- Ganti href dengan link akunmu -->
+          <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </aside>
+
+    <div class="about-copy">
+      <span class="eyebrow reveal">Di balik Naia</span>
+      <h2 class="title reveal d1">Studio kecil, <em>tanggung jawab penuh.</em></h2>
+      <p class="big reveal d1">Halo, saya Raditya. Naia Studio Labs adalah proyek freelance yang saya jalankan sendiri — dari diskusi kebutuhan, desain, coding, sampai website kamu online.</p>
+      <p class="reveal d2">Karena dikerjakan langsung oleh satu developer, kamu tidak perlu lewat perantara. Setiap pertanyaan, revisi, dan keputusan teknis kamu bicarakan langsung dengan orang yang menulis kodenya. Fokus saya: membangun sistem yang benar-benar dipakai untuk bekerja, bukan sekadar terlihat bagus.</p>
+
+      <div class="values">
+        <div class="value reveal"><b>01</b><h4>Komunikasi langsung</h4><p>Satu kontak, tanpa perantara, update progres rutin.</p></div>
+        <div class="value reveal d1"><b>02</b><h4>Kode yang rapi</h4><p>Struktur jelas sehingga mudah dikembangkan nanti.</p></div>
+        <div class="value reveal d2"><b>03</b><h4>Harga transparan</h4><p>Sekali bayar atau paket — tanpa biaya tersembunyi.</p></div>
+      </div>
+
+      <div class="skills reveal">
+        <h4>Teknologi yang saya pakai</h4>
+        <div class="skill-list">
+          <span>Laravel</span><span>PHP</span><span>React.js</span><span>Next.js</span><span>HTML</span><span>CSS</span><span>Tailwind CSS</span><span>MySQL</span><span>REST API</span><span>Git</span>
+        </div>
+      </div>
+
+      <div class="timeline reveal">
+        <div><small>Sekarang</small><h5>Founder, Naia Studio Labs</h5><p>Mengerjakan website &amp; aplikasi web untuk klien UMKM, kantor, dan bisnis.</p></div>
+        <div><small>Pendidikan</small><h5>Telkom University Purwokerto</h5><p>Mahasiswa — belajar dan membangun proyek nyata sambil kuliah.</p></div>
+        <div><small>Juga membangun</small><h5>Produk kartu NFC untuk bisnis</h5><p>Kartu profil digital &amp; display review untuk restoran dan perusahaan.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================== LAYANAN ================== -->
+<section id="layanan">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow reveal">Layanan</span>
+        <h2 class="title reveal d1">Apa yang bisa <em>kita bangun.</em></h2>
+      </div>
+      <p class="lead reveal d2">Dari halaman perkenalan bisnis sampai sistem internal yang dipakai tim setiap hari.</p>
+    </div>
+
+    <div class="services">
+      <article class="svc wide reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 5-9 5-9-5 9-5z"/><path d="M3 12l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg></div>
+        <h3>Aplikasi SaaS &amp; Sistem Custom</h3>
+        <p>Produk berbasis langganan, multi-user dengan role &amp; hak akses, sistem inventaris, kasir, booking, atau aplikasi internal yang disesuaikan dengan alur kerja bisnismu.</p>
+        <div class="stack">LARAVEL · REACT · MYSQL · REST API</div>
+      </article>
+      <article class="svc reveal d1">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 20V9"/></svg></div>
+        <h3>CRUD &amp; Dashboard Admin</h3>
+        <p>Kelola data, laporan, export, dan grafik dalam satu panel admin yang rapi.</p>
+        <div class="stack">LARAVEL · BLADE / INERTIA</div>
+      </article>
+      <article class="svc reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
+        <h3>Company Profile &amp; Landing Page</h3>
+        <p>Website perkenalan bisnis yang cepat, responsif, dan siap tampil di Google.</p>
+        <div class="stack">REACT · NEXT.JS · TAILWIND</div>
+      </article>
+      <article class="svc reveal d1">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg></div>
+        <h3>Integrasi &amp; API</h3>
+        <p>Hubungkan sistemmu dengan payment gateway, WhatsApp, atau layanan pihak ketiga.</p>
+        <div class="stack">REST API · WEBHOOK</div>
+      </article>
+      <article class="svc reveal d2">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4 2.5-2.5z"/></svg></div>
+        <h3>Deploy &amp; Maintenance</h3>
+        <p>Website online di domainmu, dipantau, di-backup, dan diperbaiki saat ada kendala.</p>
+        <div class="stack">DOMAIN · HOSTING · BACKUP</div>
+      </article>
+    </div>
+
+    <div class="process">
+      <div class="step reveal"><b>01</b><h4>Diskusi kebutuhan</h4><p>Ngobrol soal tujuan, fitur, dan budget. Gratis.</p></div>
+      <div class="step reveal d1"><b>02</b><h4>Rencana &amp; desain</h4><p>Alur, struktur halaman, dan tampilan disepakati dulu.</p></div>
+      <div class="step reveal d2"><b>03</b><h4>Development</h4><p>Dikerjakan bertahap dengan preview yang bisa kamu cek.</p></div>
+      <div class="step reveal d3"><b>04</b><h4>Online &amp; dirawat</h4><p>Deploy ke domainmu, lalu maintenance bila pilih paket.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================== PROYEK ================== -->
+<section id="proyek">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow reveal">Proyek</span>
+        <h2 class="title reveal d1">Karya &amp; <em>eksperimen.</em></h2>
+      </div>
+      <p class="lead reveal d2">Beberapa proyek yang sedang dan sudah saya kerjakan.</p>
+    </div>
+
+    <div class="projects snap-row" data-mobile-only>
+      <!-- PROYEK 1 -->
+      <article class="proj reveal">
+        <div class="proj-visual v-navy">
+          <span class="badge">Laravel · Dalam pengerjaan</span>
+          <div class="mock">
+            <div class="mock-top"><i></i><i></i><i></i></div>
+            <table>
+              <tr><th>Barang</th><th>Gudang</th><th>Stok</th><th>Status</th></tr>
+              <tr><td>Panel ACP 4mm</td><td>Jawa</td><td>240</td><td><span class="pill p-ok">tersedia</span></td></tr>
+              <tr><td>Scaffolding set</td><td>Kalimantan</td><td>36</td><td><span class="pill p-out">ekspedisi</span></td></tr>
+              <tr><td>Akrilik 3mm</td><td>Jawa</td><td>118</td><td><span class="pill p-wait">approval</span></td></tr>
+              <tr><td>Stiker Oracal</td><td>Jawa</td><td>75</td><td><span class="pill p-ok">tersedia</span></td></tr>
+            </table>
+          </div>
+        </div>
+        <div class="proj-body">
+          <small>Sistem internal · Industri konstruksi</small>
+          <h3>Sistem Inventaris Konstruksi</h3>
+          <p>Aplikasi inventaris untuk kantor konstruksi: pembelian barang, stok multi-gudang (Jawa &amp; Kalimantan), ekspedisi, dan barang keluar dengan alur approval.</p>
+          <div class="tags"><span>Laravel</span><span>MySQL</span><span>Role &amp; approval</span><span>Multi-gudang</span></div>
+        </div>
+      </article>
+
+      <!-- PROYEK 2 -->
+      <article class="proj reveal d1">
+        <div class="proj-visual v-paper">
+          <span class="badge">Web + NFC</span>
+          <div class="nfc-cards">
+            <div class="nfc a">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 8.5a6 6 0 0 1 0 7M9.5 6a10 10 0 0 1 0 12M13 4a13 13 0 0 1 0 16"/></svg>
+              <div><b>Tap to connect</b><br/><small>NTAG213 · ID CARD</small></div>
+            </div>
+            <div class="phone"><div class="av"></div><i></i><i style="width:70%;margin:0 auto"></i><i style="margin-top:8px"></i><i></i><i style="background:#9DB0E6;height:14px;border-radius:6px;margin-top:auto"></i></div>
+            <div class="nfc b">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 8.5a6 6 0 0 1 0 7M9.5 6a10 10 0 0 1 0 12M13 4a13 13 0 0 1 0 16"/></svg>
+              <div><b>Review kami ★</b><br/><small>TABLE CARD 8×8</small></div>
+            </div>
+          </div>
+        </div>
+        <div class="proj-body">
+          <small>Produk bisnis · B2B</small>
+          <h3>Kartu NFC untuk Bisnis</h3>
+          <p>Lini produk NFC: kartu ID karyawan dengan profil digital, table card restoran, dan standing display kasir untuk review Google Maps atau menu digital.</p>
+          <div class="tags"><span>NFC</span><span>Profil digital</span><span>Restoran</span><span>Korporat</span></div>
+        </div>
+      </article>
+
+      <!-- PROYEK 3 -->
+      <article class="proj reveal">
+        <div class="proj-visual v-char">
+          <span class="badge">HTML · CSS · JS</span>
+          <img src="assets/logo-dark.png" alt="" style="width:120px;height:120px;border-radius:50%;box-shadow:0 0 0 14px rgba(255,255,255,.04),0 0 0 28px rgba(255,255,255,.03),0 30px 60px -10px rgba(0,0,0,.6)" />
+        </div>
+        <div class="proj-body">
+          <small>Brand &amp; website · 2026</small>
+          <h3>Naia Studio Labs</h3>
+          <p>Identitas dan company profile studio ini — dirancang dengan dukungan mode terang &amp; gelap, responsif, dan di-deploy di Vercel.</p>
+          <div class="tags"><span>Branding</span><span>Responsive</span><span>Dark mode</span><span>Vercel</span></div>
+        </div>
+      </article>
+
+      <!-- CTA -->
+      <article class="proj cta-card reveal d1">
+        <span class="eyebrow">Slot berikutnya</span>
+        <h3>Proyekmu bisa ada di sini.</h3>
+        <p>Ceritakan ide atau masalah bisnismu — kita cari solusi web yang paling pas.</p>
+        <a href="#kontak" class="btn btn-primary">Mulai diskusi <span class="arr">→</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================== HARGA ================== -->
+<section id="harga">
+  <div class="wrap">
+    <div class="pricing-top">
+      <span class="eyebrow reveal">Harga</span>
+      <h2 class="title reveal d1">Pilih cara <em>yang pas.</em></h2>
+      <p class="lead reveal d2">Bayar sekali dan website jadi milikmu, atau ambil paket dengan maintenance bulanan supaya website selalu terawat.</p>
+      <div class="toggle reveal d3" role="group" aria-label="Jenis pembayaran">
+        <span class="pill-bg" id="pillBg"></span>
+        <button type="button" data-mode="once" aria-pressed="true">Sekali Bayar</button>
+        <button type="button" data-mode="bundle" aria-pressed="false">Paket + Maintenance <span class="save">hemat</span></button>
+      </div>
+    </div>
+    <div class="plans snap-row" id="plans" data-start="featured"></div>
+    <p class="price-note reveal">Harga di atas adalah <b>estimasi awal</b>. Harga final ditentukan setelah diskusi kebutuhan. Domain &amp; hosting dapat diurus bersama sesuai kesepakatan.</p>
+  </div>
+</section>
+
+<!-- ================== FAQ ================== -->
+<section id="faq">
+  <div class="wrap faq-grid">
+    <div>
+      <span class="eyebrow reveal">FAQ</span>
+      <h2 class="title reveal d1">Yang sering <em>ditanyakan.</em></h2>
+    </div>
+    <div class="faq reveal d1">
+      <details open><summary>Apa bedanya sekali bayar dan paket maintenance? <i>+</i></summary><p>Sekali bayar: website diserahkan penuh setelah selesai, dengan masa garansi perbaikan bug. Paket maintenance: biaya awal lebih ringan, lalu ada biaya bulanan untuk backup, perbaikan, update konten, dan pemantauan agar website tetap berjalan.</p></details>
+      <details><summary>Berapa lama pengerjaannya? <i>+</i></summary><p>Tergantung skala. Landing page biasanya sekitar 1–2 minggu, aplikasi CRUD 3–6 minggu, dan SaaS atau sistem custom dibahas per tahap setelah kebutuhan jelas.</p></details>
+      <details><summary>Apakah saya mendapatkan source code-nya? <i>+</i></summary><p>Ya. Setelah pelunasan, source code dan akses ke website diserahkan ke kamu.</p></details>
+      <details><summary>Bagaimana sistem pembayarannya? <i>+</i></summary><p>Umumnya DP di awal, lalu pelunasan setelah website selesai dan kamu setujui. Detailnya disepakati saat diskusi.</p></details>
+      <details><summary>Kalau saya sudah punya website, bisa ambil maintenance saja? <i>+</i></summary><p>Bisa — hubungi saya dulu supaya saya bisa cek teknologi dan kondisi website-nya.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ================== KONTAK ================== -->
+<section class="contact" id="kontak">
+  <div class="wrap">
+    <div class="contact-box reveal">
+      <span class="eyebrow">Kontak</span>
+      <h2>Punya ide? <em>Ayo bangun bareng.</em></h2>
+      <p>Konsultasi awal gratis. Ceritakan kebutuhanmu, saya bantu hitung fitur, waktu, dan biayanya.</p>
+      <div class="contact-actions">
+        <a class="btn btn-primary" id="waBtn" href="#" target="_blank" rel="noopener">Chat WhatsApp <span class="arr">→</span></a>
+        <a class="btn btn-ghost" id="mailBtn" href="#">Kirim Email</a>
+      </div>
+      <div class="contact-info">
+        <div><small>Email</small><div id="mailText"></div></div>
+        <div><small>WhatsApp</small><div id="waText"></div></div>
+        <div><small>Lokasi</small><div>Banjarmasin · Melayani online</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <a href="#beranda" class="brand"><img class="logo" src="assets/logo-light.png" alt="" /><span class="brand-text"><b>Naia Studio Labs</b></span></a>
+      <span>© <span id="yr"></span> Naia Studio Labs · Muhammad Raditya Azanata</span>
+    </div>
+    <div class="big-word" aria-hidden="true">Naia</div>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/pricing-data.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/pricing.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

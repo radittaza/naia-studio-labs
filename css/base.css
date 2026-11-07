@@ -1,0 +1,32 @@
+/* ================== BASE ================== */
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:var(--nav-offset)}
+html,body{overflow-x:clip}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;transition:background .4s,color .4s;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+/* paper grain */
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;opacity:.35;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+[data-theme="dark"] body::before{mix-blend-mode:screen;opacity:.25}
+
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);display:inline-flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:22px;height:1px;background:currentColor}
+.serif{font-family:var(--serif);font-variation-settings:"SOFT" 100;letter-spacing:-.02em}
+h1,h2,h3{color:var(--ink);font-weight:600;line-height:1.05}
+h2.title{font-family:var(--serif);font-variation-settings:"SOFT" 100;font-size:clamp(36px,5vw,62px);letter-spacing:-.03em;font-weight:600;margin:16px 0 18px}
+h2.title em{font-style:italic;font-weight:400;color:var(--slate)}
+[data-theme="dark"] h2.title em{color:var(--accent)}
+.lead{font-size:18px;color:var(--muted);max-width:560px}
+section{padding:24px 0 96px;position:relative}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;font-weight:600;font-size:15px;transition:transform .25s,box-shadow .25s,background .25s}
+.btn-primary{background:var(--btn-bg);color:var(--btn-fg);box-shadow:0 10px 30px -12px rgba(11,27,63,.6)}
+.btn-primary:hover{transform:translateY(-2px)}
+.btn-ghost{border:1px solid var(--line-2);color:var(--ink)}
+.btn-ghost:hover{background:var(--surface)}
+.btn .arr{transition:transform .25s}
+.btn:hover .arr{transform:translateX(4px)}

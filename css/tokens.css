@@ -1,0 +1,18 @@
+/* ================== TOKENS ================== */
+:root{
+  --navy:#0B1B3F; --navy-2:#13285A; --charcoal:#2E2F34; --slate:#4B4E58;
+  --bg:#ECEBE7; --bg-2:#E4E3DE; --surface:#FFFFFF; --surface-2:#F6F5F1;
+  --ink:#0B1838; --text:#22252E; --muted:#61656F; --line:rgba(11,24,56,.12); --line-2:rgba(11,24,56,.2);
+  --accent:#7F97D6; --ok:#2F8F6B;
+  --btn-bg:var(--navy); --btn-fg:#fff;
+  --shadow:0 1px 0 rgba(255,255,255,.6) inset, 0 20px 50px -24px rgba(11,27,63,.35);
+  --radius:22px;
+  --nav-offset:88px; /* jarak aman di bawah navbar saat klik menu */
+  --serif:"Fraunces", Georgia, serif; --sans:"Inter Tight", system-ui, -apple-system, Segoe UI, sans-serif; --mono:"JetBrains Mono", ui-monospace, monospace;
+}
+[data-theme="dark"]{
+  --bg:#1B1C20; --bg-2:#222328; --surface:#26272D; --surface-2:#2D2E34;
+  --ink:#F4F3EF; --text:#E3E2DE; --muted:#9C9FA8; --line:rgba(255,255,255,.09); --line-2:rgba(255,255,255,.18);
+  --accent:#9DB0E6; --btn-bg:#F4F3EF; --btn-fg:var(--navy);
+  --shadow:0 1px 0 rgba(255,255,255,.04) inset, 0 24px 60px -28px rgba(0,0,0,.7);
+}
