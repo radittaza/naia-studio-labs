@@ -7,7 +7,7 @@ Website statis (HTML + CSS + JS), tanpa build step. Siap deploy ke Vercel.
 ```
 naia-studio-labs/
 ├── index.html            ← semua konten teks & struktur halaman
-├── assets/               ← logo, favicon, foto
+├── assets/               ← logo, favicon, foto tim (raditya.jpg, amanda.jpg)
 │   ├── logo-light.png
 │   ├── logo-dark.png
 │   ├── logo-light-64.png
@@ -17,9 +17,9 @@ naia-studio-labs/
 │   ├── base.css          ← reset, tipografi, tombol
 │   ├── nav.css           ← navbar
 │   ├── hero.css          ← beranda + animasi dashboard + marquee
-│   ├── about.css         ← profil founder
+│   ├── about.css         ← section "Di balik Naia" (profil tim)
 │   ├── services.css      ← layanan + alur kerja
-│   ├── projects.css      ← kartu proyek + mockup
+│   ├── projects.css      ← slider proyek + ilustrasi mockup
 │   ├── pricing.css       ← kartu harga + toggle
 │   ├── faq.css
 │   ├── contact.css
@@ -28,6 +28,8 @@ naia-studio-labs/
 └── js/
     ├── config.js         ← EMAIL & NOMOR WHATSAPP
     ├── pricing-data.js   ← HARGA & FITUR PAKET
+    ├── projects-data.js  ← DAFTAR PROYEK (judul, deskripsi, tag, screenshot)
+    ├── projects.js       ← render kartu proyek + ilustrasi bawaan
     ├── theme.js          ← tombol mode terang/gelap
     ├── carousel.js       ← kartu geser + titik indikator (HP)
     ├── pricing.js        ← render kartu harga
@@ -44,7 +46,9 @@ naia-studio-labs/
 | Jarak section di bawah navbar | `--nav-offset` di `css/tokens.css` |
 | Tampilan HP / tablet         | `css/responsive.css`    |
 | Teks, proyek, FAQ, link sosmed | `index.html` (cari komentar `<!-- ===== NAMA SECTION -->`) |
-| Foto profil                  | ganti file `assets/foto.jpg` (rasio 1:1, 800×800 px) |
+| Foto tim                     | ganti `assets/raditya.jpg` / `assets/amanda.jpg` (1:1, 800×800 px) |
+| Proyek portofolio            | `js/projects-data.js` — ganti proyek `demo: true` dengan proyek asli; isi `image` untuk pakai screenshot |
+| Profil tim, pendidikan, sosmed | `index.html` → section TENTANG / TIM |
 
 ## Jalankan lokal
 

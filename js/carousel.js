@@ -1,9 +1,9 @@
 /* =========================================================
-   CAROUSEL GESER (khusus layar kecil)
+   CAROUSEL GESER
    ---------------------------------------------------------
-   Elemen dengan class .snap-row menjadi baris geser di HP
-   (diatur di css/responsive.css). Script ini menambahkan
-   titik indikator + menyorot titik yang aktif.
+   Elemen dengan class .snap-row menjadi baris geser
+   (proyek: semua layar, harga: tablet & HP). Script ini
+   menambahkan titik indikator + tombol panah.
    data-start="featured" → saat pertama dibuka di HP, langsung
    menampilkan kartu .featured (paket "Paling dipilih").
    ========================================================= */
@@ -32,9 +32,20 @@ window.Carousel = (function () {
     });
   }
 
+  function arrows(el) {
+    if (!el.id) return [];
+    return document.querySelectorAll(`[data-carousel-prev="#${el.id}"],[data-carousel-next="#${el.id}"]`);
+  }
+
   function update(el) {
     const dots = rows.get(el);
     if (!dots) return;
+    // tombol panah: nonaktif di ujung kiri/kanan
+    arrows(el).forEach((btn) => {
+      const atStart = el.scrollLeft <= 4;
+      const atEnd = el.scrollLeft + el.clientWidth >= el.scrollWidth - 4;
+      btn.disabled = btn.hasAttribute("data-carousel-prev") ? atStart : atEnd;
+    });
     dots.hidden = !isScrollable(el);
     const idx = activeIndex(el);
     [...dots.children].forEach((d, i) => d.classList.toggle("on", i === idx));
@@ -83,6 +94,18 @@ window.Carousel = (function () {
   function refresh(el) {
     if (rows.has(el)) buildDots(el); else init(el);
   }
+
+  // Tombol panah: data-carousel-prev="#id" / data-carousel-next="#id"
+  document.addEventListener("click", (e) => {
+    const btn = e.target.closest("[data-carousel-prev],[data-carousel-next]");
+    if (!btn) return;
+    const prev = btn.hasAttribute("data-carousel-prev");
+    const el = document.querySelector(btn.getAttribute(prev ? "data-carousel-prev" : "data-carousel-next"));
+    if (!el || !el.children.length) return;
+    const gap = parseFloat(getComputedStyle(el).columnGap) || 0;
+    const step = el.children[0].offsetWidth + gap;
+    el.scrollBy({ left: prev ? -step : step, behavior: "smooth" });
+  });
 
   document.querySelectorAll(".snap-row").forEach(init);
   window.addEventListener("resize", () => rows.forEach((_, el) => update(el)));
